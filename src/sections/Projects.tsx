@@ -4,7 +4,7 @@ import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right-link.svg";
-import githubIcon from "@/assets/icons/github.svg";
+import Github from "@/assets/icons/github.svg";
 import grainImage from "@/assets/images/grain.jpg";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
@@ -20,6 +20,7 @@ const portfolioProjects = [
       { title: "Increased mobile traffic by 35%" },
     ],
     link: "https://saveit-passwordmanager.vercel.app",
+    src: "https://github.com/vedansh302/SaveIT-PasswordManager.git",
     image: darkSaasLandingPage,
   },
   {
@@ -32,6 +33,7 @@ const portfolioProjects = [
       { title: "Increased brand awareness by 15%" },
     ],
     link: "https://youtu.be/7hi5zwO75yc",
+    src: "https://github.com/vedansh302",
     image: lightSaasLandingPage,
   },
   {
@@ -44,6 +46,7 @@ const portfolioProjects = [
       { title: "Increased mobile traffic by 35%" },
     ],
     link: "https://youtu.be/Z7I5uSRHMHg",
+    src: "https://github.com/vedansh302",
     image: aiStartupLandingPage,
   },
 ];
@@ -82,13 +85,21 @@ export const ProjectsSection = () => {
                         </span>
                       </li>
                     ))}
-                  </ul>              
+                  </ul>
+                  <div className="flex flex-col mt-8 gap-4 md:flex-row ">
                     <a href={project.link} target="blank">
-                      <button className="bg-white text-gray-950 h-12 w-full md:w-auto md:px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
+                      <button className="bg-white text-gray-950 h-12 w-full md:w-auto md:px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2">
                         <span>Visit Live Site</span>
                         <ArrowUpRightIcon className="size-4" />
                       </button>
-                    </a>               
+                    </a>
+                    <a href={project.src} target="blank">
+                      <button className="bg-white text-gray-950 h-12 w-full md:w-auto md:px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2">
+                        <span>Source Code</span>
+                        <Github className="size-5" />
+                      </button>
+                    </a>
+                  </div>
                 </div>
                 <div className="relative">
                   <Image src={project.image} alt={project.title} className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none" />
