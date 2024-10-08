@@ -6,6 +6,7 @@ import { TestimonialsSection } from "@/sections/Testimonials";
 import { AboutSection } from "@/sections/About";
 import { ContactSection } from "@/sections/Contact";
 import { Footer } from "@/sections/Footer";
+import { Analytics } from "@vercel/analytics/react"
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
       </section>
 
       <Footer />
+      <Analytics/>
     </div>
   );
 }
