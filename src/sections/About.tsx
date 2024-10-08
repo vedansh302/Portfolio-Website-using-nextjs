@@ -17,7 +17,7 @@ import sqlIcon from "@/assets/icons/mysql.svg";
 import pythonIcon from "@/assets/icons/python.svg";
 import nodejsIcon from "@/assets/icons/nodedotjs.svg";
 import expressIcon from "@/assets/icons/express.svg";
-import mapImage from "@/assets/images/map.png";
+import mapImage from "@/assets/images/map2.png";
 import smileMemoji from "@/assets/images/memoji-smile.png";
 import { CardHeader } from "@/components/CardHeader";
 import { ToolboxItems } from "@/components/ToolboxItems";

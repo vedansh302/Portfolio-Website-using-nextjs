@@ -128,7 +128,7 @@ export const HeroSection = () => {
         </div>
         <div className="max-w-lg mx-auto">
           <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
-            Building Exceptional User Experiences
+            Hi, I'm Vedansh 👋
           </h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">
             I specialize in transforming designs into functional, high-performing
@@ -137,15 +137,15 @@ export const HeroSection = () => {
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
           <button
-            onClick={() => scrollToSection("projects")}
+            onClick={() => window.open('/resume.pdf', '_blank')}
             className="cursor-pointer inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl z-10"
           >
-            <span className="font-semibold">Explore My Work</span>
+            <span className="font-semibold">Resume</span>
             <ArrowDown className="size-4" />
           </button>
           <button
             onClick={() => scrollToSection("contact")}
-            className="cursor-pointer inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl z-10"
+            className="cursor-pointer inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-4 rounded-xl z-10"
           >
             <span>👋</span>
             <span className="font-semibold">Let&apos;s Connect</span>

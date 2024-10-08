@@ -10,7 +10,7 @@ import { Card } from "@/components/Card";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
+    technologies: "Next.js & TypeScript",
     year: "2022",
     title: "Dark Saas Landing Page",
     results: [
@@ -22,7 +22,7 @@ const portfolioProjects = [
     image: darkSaasLandingPage,
   },
   {
-    company: "Innovative Co",
+    technologies: "Next.js & TypeScript",
     year: "2021",
     title: "Light Saas Landing Page",
     results: [
@@ -34,7 +34,7 @@ const portfolioProjects = [
     image: lightSaasLandingPage,
   },
   {
-    company: "Quantum Dynamics",
+    technologies: "Next.js & TypeScript",
     year: "2023",
     title: "AI Startup Landing Page",
     results: [
@@ -64,8 +64,8 @@ export const ProjectsSection = () => {
 
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
-                <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
-                  <span>{project.company}</span>
+                <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold  text-sm text-transparent bg-clip-text">
+                  <span>{project.technologies}</span>
                   <span>&bull;</span>
                   <span>{project.year}</span>
                 </div>
