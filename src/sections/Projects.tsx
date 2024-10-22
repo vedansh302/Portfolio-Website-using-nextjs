@@ -11,34 +11,35 @@ import { Card } from "@/components/Card";
 
 const portfolioProjects = [
   {
-    technologies: "React & JavaScript",
+    technologies: "React | Express.js | MongoDB | Node.js",
     year: "2024",
-    title: "SaveIT - Password Manager",
+    title: "JobSphere - A Job Portal",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
-    ],
-    link: "https://saveit-passwordmanager.vercel.app",
-    src: "https://github.com/vedansh302/SaveIT-PasswordManager.git",
-    image: darkSaasLandingPage,
-  },
-  {
-    technologies: "Next.js & TypeScript",
-    year: "2021",
-    title: "Light Saas Landing Page",
-    results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+      { title: "Developed using MERN stack" },
+      { title: "Integrated ShadCN for sleek UI" },
+      { title: "Secured with JWT authentication" },
     ],
     link: "https://youtu.be/7hi5zwO75yc",
     src: "https://github.com/vedansh302",
     image: lightSaasLandingPage,
   },
   {
-    technologies: "Next.js & TypeScript",
-    year: "2023",
+    technologies: "React | Tailwind CSS",
+    year: "2024",
+    title: "SaveIT - Password Manager",
+    results: [
+      { title: "Built with React & Tailwind CSS" },
+      { title: "Responsive UI for all devices" },
+      { title: "Fast and secure password management" },
+    ],
+    link: "https://saveit-passwordmanager.vercel.app",
+    src: "https://github.com/vedansh302/SaveIT-PasswordManager.git",
+    image: darkSaasLandingPage,
+  },
+
+  {
+    technologies: "JavaScript | Express.js | MongoDB | Node.js",
+    year: "2024",
     title: "AI Startup Landing Page",
     results: [
       { title: "Enhanced user experience by 40%" },

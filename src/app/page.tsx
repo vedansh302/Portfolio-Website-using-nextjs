@@ -19,7 +19,7 @@ export default function Home() {
         <ProjectsSection />
       </section>
       <TapeSection />
-      <TestimonialsSection />
+      {/* <TestimonialsSection /> */}
       <section id="about">
         <AboutSection />
       </section>
