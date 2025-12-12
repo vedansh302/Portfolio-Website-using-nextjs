@@ -1,6 +1,6 @@
-import darkSaasLandingPage from "@/assets/images/saveit passmanager1.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import darkSaasLandingPage from "@/assets/images/cartify.png";
+import lightSaasLandingPage from "@/assets/images/jobsphere.png";
+import aiStartupLandingPage from "@/assets/images/echoai.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right-link.svg";
@@ -12,7 +12,7 @@ import { Card } from "@/components/Card";
 const portfolioProjects = [
   {
     technologies: "React | Express.js | MongoDB | Node.js",
-    year: "2024",
+    year: "2025",
     title: "JobSphere - A Job Portal",
     results: [
       { title: "Developed using MERN stack" },
@@ -24,30 +24,30 @@ const portfolioProjects = [
     image: lightSaasLandingPage,
   },
   {
-    technologies: "React | Tailwind CSS",
-    year: "2024",
-    title: "SaveIT - Password Manager",
+    technologies: "Next.js | Node.js | PostgreSQL | Tailwind CSS",
+    year: "2025",
+    title: "Cartify - AI Ecommerce Platform",
     results: [
-      { title: "Built with React & Tailwind CSS" },
-      { title: "Responsive UI for all devices" },
-      { title: "Fast and secure password management" },
+      { title: "Full-stack eCommerce built with Next.js" },
+      { title: "AI-driven product data generation & workflows" },
+      { title: "Admin-powered store approval & discounts" },
     ],
-    link: "https://saveit-passwordmanager.vercel.app",
-    src: "https://github.com/vedansh302/SaveIT-PasswordManager.git",
+    link: "https://cartify-ecomm.vercel.app/",
+    src: "https://github.com/vedansh302/Cartify---Ecommerce-Platform.git",
     image: darkSaasLandingPage,
   },
 
   {
-    technologies: "JavaScript | Express.js | MongoDB | Node.js",
-    year: "2024",
-    title: "AI Startup Landing Page",
+    technologies: "React | Express.js | MongoDB | OpenAI API",
+    year: "2025",
+    title: "EchoAI - AI Chatbot ",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "AI chatbot with text & image generation" },
+      { title: "Secure user auth with chat history storage" },
+      { title: "Stripe-powered credits & payments system" },
     ],
-    link: "https://github.com/vedansh302",
-    src: "https://github.com/vedansh302",
+    link: "https://echoai-chatbot.vercel.app/",
+    src: "https://github.com/vedansh302/EchoAI---AI-Chatbot.git",
     image: aiStartupLandingPage,
   },
 ];
@@ -88,13 +88,13 @@ export const ProjectsSection = () => {
                     ))}
                   </ul>
                   <div className="flex flex-col mt-8 gap-4 md:flex-row ">
-                    <a href={project.link} target="blank">
+                    <a href={project.link} target="_blank" rel="noopener noreferrer">
                       <button className="bg-white text-gray-950 h-12 w-full md:w-auto md:px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2">
                         <span>Visit Live Site</span>
                         <ArrowUpRightIcon className="size-4" />
                       </button>
                     </a>
-                    <a href={project.src} target="blank">
+                    <a href={project.src} target="_blank" rel="noopener noreferrer">
                       <button className="bg-white text-gray-950 h-12 w-full md:w-auto md:px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2">
                         <span>Source Code</span>
                         <Github className="size-5" />
